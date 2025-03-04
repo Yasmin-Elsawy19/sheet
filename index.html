@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول التعبئة والتغليف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>لف وحزم / تعبئة وتغليف</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>السعر</th>
+                <th>المنتج</th>
+                <th>رقم التليفون</th>
+                <th>اسم العميل</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيتم إدخال 50 صفًا تلقائيًا -->
+        </tbody>
+    </table>
+
+    <script>
+        // توليد 50 صف تلقائيًا
+        const tbody = document.querySelector("tbody");
+
+        for (let i = 1; i <= 50; i++) {
+            let row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${i}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            `;
+            tbody.appendChild(row);
+        }
+    </script>
+
+</body>
+</html>
